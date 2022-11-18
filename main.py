@@ -73,7 +73,7 @@ while True:
     image = cv2.resize(image, (w, h))
     image, info = findFace(image)
     pError = trackFace( info, w, pid, pError)
-    print("Center", info[0], "Area", info[1])
+    #print("Center", info[0], "Area", info[1])
     cv2.imshow("Output", image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         me.land()
